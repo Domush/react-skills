@@ -8,13 +8,13 @@ This repository is a collection of high-performance, specialized **Agent Skills*
 
 The following skill modules are available in the [skills/](skills) directory:
 
-| Skill | Purpose |
-| --- | --- |
-| [**development-loop**](skills/development-loop/SKILL.md) | A 6-phase problem-solving matrix for analysis, design, and execution. |
-| [**react**](skills/react/SKILL.md) | Engineering reference for React 19+ and Tailwind CSS v4+ development. |
-| [**electron**](skills/electron/SKILL.md) | Modern Electron (41+) configuration, IPC security, and build standards. |
-| [**markdown**](skills/markdown/SKILL.md) | Clean, lint-compliant authoring standards for GitHub Flavored Markdown. |
-| [**writing-skills**](skills/writing-skills/SKILL.md) | The "meta-skill" for authoring, testing, and deploying new agent skills. |
+| Skill | Purpose | Details |
+| --- | --- | --- |
+| [**development-loop**](skills/development-loop/SKILL.md) | A 6-phase problem-solving matrix for analysis, design, and execution. | Use when planning a new feature, refactoring existing code, debugging a complex issue, or executing any multi-step development task — covers structured problem analysis, multi-option solution design, implementation, validation loops, optimization, and documentation |
+| [**react**](skills/react/SKILL.md) | Engineering reference for React 19+ and Tailwind CSS v4+ development. | Use when writing React 19+ components, hooks, or pages, or when writing Tailwind CSS v4+ styles, theming, or utility classes — covers current best practices, deprecated patterns, and migration from older versions |
+| [**electron**](skills/electron/SKILL.md) | Modern Electron (41+) configuration, IPC security, and build standards. | Use when configuring, building, or troubleshooting Electron 41+, electron-vite 5+, or electron-builder 26+ projects — covers breaking changes, deprecated patterns, IPC security, build configuration, and proper project structure |
+| [**markdown**](skills/markdown/SKILL.md) | Clean, lint-compliant authoring standards for GitHub Flavored Markdown. | Use when authoring, editing, or reviewing Markdown files — covers proper syntax, lint rules, formatting best practices, tables, code blocks, and deprecated patterns to avoid |
+| [**writing-skills**](skills/writing-skills/SKILL.md) | The "meta-skill" for authoring, testing, and deploying new agent skills. | Use when creating new skills, editing existing skills, or verifying skills work before deployment |
 
 ## 🛠️ Usage
 
@@ -44,19 +44,19 @@ To use these skills in your project, you must place them in a directory that you
 
 ### App-Specific Mapping
 
-| AI Assistant | Skills Directory | Notes |
-| :--- | :--- | :--- |
-| **Antigravity** | `.agents/skills/` | Cross-tool standard compatibility. |
-| **Trae** | `.trae/skills/` | Project-level skills injection. |
-| **OpenCode** | `.opencode/skills/` | Supports specific skill sets. |
-| **Cline** | `.clinerules/` | Cline requires this path; name files as skills. |
-| **Cursor** | `.cursor/skills/` | Can also use `.cursorrules` in root. |
-| **Windsurf** | `.windsurf/skills/` | Can also use `.windsurfrules` in root. |
-| **Claude Code** | `.claude/skills/` | Replaces top-level `CLAUDE.md`. |
-| **GitHub Copilot** | `.github/skills/` | Replaces `.github/copilot-instructions.md`. |
+| AI Assistant | Skills Directory |
+| :--- | :--- |
+| **Antigravity** | `.agents/skills/` |
+| **Trae** | `.trae/skills/` |
+| **OpenCode** | `.opencode/skills/` |
+| **Cline** | `.clinerules/skills/` |
+| **Cursor** | `.cursor/skills/` |
+| **Windsurf** | `.windsurf/skills/` |
+| **Claude Code** | `.claude/skills/` |
+| **GitHub Copilot** | `.github/skills/` |
 
 > [!TIP]
-> **Universal Fallback**: If your AI app is not listed or if you are unsure, use the **`.agent/skills/`** directory. Most modern agents are pre-configured to look for skill definitions at this path.
+> **Universal Fallback**: If your AI app is not listed or if you are unsure, use the **`.agent/skills/`** directory. Most modern agents are pre-configured to look for skill definitions in this path.
 
 ### 📥 Fetching with Git
 
