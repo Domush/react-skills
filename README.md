@@ -22,13 +22,17 @@ The following skill modules are available in the [skills/](skills) directory:
 
 When interacting with this repository, agents should:
 
-1. **Identify Triggers**: Match the task against the `description` fields in each `SKILL.md`.
-2. **Load Reference**: Use `view_file` to read the relevant `SKILL.md` content.
-3. **Follow Standards**: Adhere strictly to the methodologies and patterns defined in the skill (e.g., the TDD cycle for documentation or the 6-phase development loop).
+Use `Method A` to fetch the skills and `Method B` to update the skills. Ensure that skills are checked out to the correct directory for the AI coding app being used.
 
 ### For Humans
 
 These skills serve as the codebase's "Standard Operating Procedures." They ensure that every AI agent joining the project follows the same high-quality patterns, reducing technical debt and improving consistency.
+
+**Easy install:** Paste this into your AI agent's chat window:
+
+```text
+Install the skills from the repository https://github.com/domush/react-skills
+```
 
 ## 🧠 Design Philosophy
 
