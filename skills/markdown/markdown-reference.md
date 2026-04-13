@@ -57,7 +57,7 @@ This file supplements the main `SKILL.md` with advanced patterns, edge cases, an
 
 <!-- Minimum valid table -->
 | A |
-|---|
+| --- |
 | 1 |
 ```
 

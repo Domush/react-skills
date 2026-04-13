@@ -21,7 +21,7 @@ You write test cases (pressure scenarios with subagents), watch them fail (basel
 
 ## What is a Skill?
 
-A **skill** is a reference guide for proven techniques, patterns, or tools. Skills help future Claude instances find and apply effective approaches.
+A **skill** is a reference guide for proven techniques, patterns, or tools. Skills help future agent instances find and apply effective approaches.
 
 **Skills are:** Reusable techniques, patterns, tools, reference guides
 
@@ -71,7 +71,7 @@ API docs, syntax guides, tool documentation (office docs)
 
 ## Directory Structure
 
-```text
+```bash
 skills/
   skill-name/
     SKILL.md              # Main reference (required)
@@ -101,7 +101,7 @@ skills/
   - **NEVER summarize the skill's process or workflow** (see CSO section for why)
   - Keep under 500 characters if possible
 
-```markdown
+```yaml
 ---
 name: Skill-Name-With-Hyphens
 description: Use when [specific triggering conditions and symptoms]
@@ -347,7 +347,7 @@ You're good at porting - one great example is enough.
 
 ### Self-Contained Skill
 
-```text
+```bash
 defense-in-depth/
   SKILL.md    # Everything inline
 ```
@@ -355,7 +355,7 @@ When: All content fits, no heavy reference needed
 
 ### Skill with Reusable Tool
 
-```text
+```bash
 condition-based-waiting/
   SKILL.md    # Overview + patterns
   example.ts  # Working helpers to adapt
@@ -364,7 +364,7 @@ When: Tool is reusable code, not just narrative
 
 ### Skill with Heavy Reference
 
-```text
+```bash
 pptx/
   SKILL.md       # Overview + workflows
   pptxgenjs.md   # 600 lines API reference
@@ -585,7 +585,7 @@ Deploying untested skills = deploying untested code. It's a violation of quality
 
 ## Skill Creation Checklist (TDD Adapted)
 
-**IMPORTANT: Use TodoWrite to create todos for EACH checklist item below.**
+**IMPORTANT: Use the todo tool to create todos for EACH checklist item below.**
 
 **RED Phase - Write Failing Test:**
 - [ ] Create pressure scenarios (3+ combined pressures for discipline skills)

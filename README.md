@@ -22,16 +22,24 @@ The following skill modules are available in the [skills/](skills) directory:
 
 When interacting with this repository, agents should:
 
-Use `Method A` to fetch the skills and `Method B` to update the skills. Ensure that skills are checked out to the correct directory for the AI coding app being used.
+Use `Method A` to fetch the skills and `Method B` to update the skills. Ensure that skills are checked out to the correct directory for the AI coding app being used. Since not all skills are relevant to every project, agents should be selective in which skills they install. **Always** ask the user which skills they want to install and adjust the git commands to selectively install them.
 
 ### For Humans
 
 These skills serve as the codebase's "Standard Operating Procedures." They ensure that every AI agent joining the project follows the same high-quality patterns, reducing technical debt and improving consistency.
 
-**Easy install:** Paste this into your AI agent's chat window:
+**AI-driven install:** Paste this into your AI agent's chat window:
 
 ```text
 Install the skills from the repository https://github.com/domush/react-skills
+```
+
+**Commandline install:** Execute the following command in your terminal:
+
+This command uses the `skills` CLI tool to fetch and install only the selected skills you want directly into your project:
+
+```bash
+npx skills add domush/react-skills
 ```
 
 ## 🧠 Design Philosophy

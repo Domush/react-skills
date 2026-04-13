@@ -128,7 +128,7 @@ Covers CommonMark, GitHub Flavored Markdown (GFM), markdownlint rules, best prac
 
 ```markdown
 |Column 1|Column 2|Column 3|
-|---|---|---|
+| --- | --- | --- |
 |Cell 1|Cell 2|Cell 3|
 |Cell 4|Cell 5|Cell 6|
 ```
@@ -253,7 +253,7 @@ function hello() {
 
 ## Inline Lint Controls
 
-Disable rules selectively when needed:
+Disable rules selectively only when you have the explicit permission of the user and have explained the reason for the exception. Always prefer surgical disables over blanket disables.:
 
 ```markdown
 <!-- Disable for the next line -->
